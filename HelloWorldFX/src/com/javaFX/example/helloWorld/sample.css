@@ -1,0 +1,9 @@
+/* The background colour of the root element */
+.root {
+    -fx-background-color: gold;
+}
+
+/* The descriptor for the label */
+.label {
+    -fx-font-size: 20;
+}

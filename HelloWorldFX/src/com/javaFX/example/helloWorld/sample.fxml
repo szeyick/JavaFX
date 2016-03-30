@@ -1,0 +1,16 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<!-- The pane can use style sheets that are referenced within the tags. -->
+<GridPane fx:controller="com.javaFX.example.helloWorld.SampleController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+          stylesheets="/com/javaFX/example/helloWorld/sample.css"
+>
+
+    <!-- The button onAction defines which method to call when a button is pressed -->
+    <Button text="Say 'Hello World'" onAction="#sayHelloWorld"/>
+
+    <!-- The label is associated in the code to an instance variable with the same as the id -->
+    <Label GridPane.rowIndex="1" fx:id="helloWorld"/>
+</GridPane>
