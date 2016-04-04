@@ -58,3 +58,9 @@ drawing. If we slide it along, we may begin at the second or third index rather 
 
 In this example, we create a slider to which we add a listener. The code looks a little funny because that is a lambda
 expression which is part of the Java 8 API. It essentially creates an anonymous inner class that executes a function.
+
+### Shapes
+
+The shapes that you can draw in JavaFX are very similar to those that you can draw in Swing. In shape drawing, we mostly
+just define the point on the screen where we wish to draw, then set the properties of the shape that we want to draw
+then the API handles the rest.
