@@ -64,3 +64,34 @@ expression which is part of the Java 8 API. It essentially creates an anonymous 
 The shapes that you can draw in JavaFX are very similar to those that you can draw in Swing. In shape drawing, we mostly
 just define the point on the screen where we wish to draw, then set the properties of the shape that we want to draw
 then the API handles the rest.
+
+The JavaFX API provides the same shapes that we can draw in Swing along with others such as a SVGPath, Cubic Curve
+ and QuadCurve.
+
+When dealing with Cubic Curves, the control points are where the curves will be pulled towards to generate the curve.
+
+For Path shapes, the MoveTo, LineTo objects elements that we can add to the path, we cannot add these as Shapes. These
+present path elements that can be drawn at a point along the path.
+
+### Colours
+
+Aside from setting the fill colour of a shape to a default colour presented by the Color class, we can also provide
+textures and gradients. This is similar to the colouring properties that can be done with Swing.
+
+There are many other properties that can be set to create colours, such as gradient points, radius, cycles.
+
+### Text & Fonts
+
+Text is treated like a shape, therefore we can provide the same properties to it to display a string on the screen.
+
+With text there are a few properties that we would like to remember, especially regarding the positioning of text since
+some letters are different sizes.
+
+- Baseline - The invisible line that all characters in the string are horizontally lined up on. The x,y of a Text object
+defines the baseline x,y.
+- Descent - The amount that a character dips beneath the baseline, letters such as g, j will have an descent.
+- Ascent - The distance between the top of all the characters and the tallest character, letters such as h, f will have
+a greater ascent.
+
+Font's can be installed onto a Text node to make it look different. Because Java can be ported the text will need to
+be installed on the system it is run on to show, otherwise it will use the default font.
