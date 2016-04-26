@@ -162,3 +162,34 @@ primaryStage.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent me) -> {
 }
 ```
 
+### Observable List Collection
+
+For a long time, Java Swing developers have built applications using an ArrayList to represent a list of objects that
+will be displayed as a list in a UI. This led to some issues when trying to synchronise models with their views.
+
+The solution in JavaFX is to use the ObservableList class. It is a collection that is capable of notifying UI controls
+when objects are added, updated and removed. These are generally used in ListView's and TableView's.
+
+An example of the usage of an ObservableList is available in the ObservableListMain application.
+
+In the example we use the ObservableList to contain the list items, we can update the list of items and display
+in a single method. We can pass the ObservableList to the ListView which will manage the models in the list.
+
+As we add the items to the ObservableList, the ListView is notified and automatically updated to reflect the changes
+in the list.
+
+### Table Views
+
+We can also use the ObservableLists with a TableView. The JavaFX TableView is similar to the JTable for Swing.
+
+Refer to the TableViewApplication for a code demo.
+
+### Threading
+
+When developing GUI applications, we must remember to avoid blocking the UI thread when the system is busy. Typically
+in these types of applications, whenever a user interacts with the application, it blocks the UI so we'll need to offload
+the user tasks or other tasks onto a different thread.
+
+
+
+
