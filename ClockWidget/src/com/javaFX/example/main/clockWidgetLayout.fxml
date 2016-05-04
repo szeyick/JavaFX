@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<?import com.javaFX.example.main.uiControls.MessageLabel?>
+<BorderPane id="root" fx:id="rootBorderPane" prefHeight="100.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.javaFX.example.main.controller.ClockWidgetController">
+<center>
+      <VBox id="contentBox" alignment="TOP_CENTER" prefHeight="50.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="timeLabel" fx:id="timeLabel" text="00:00:00" textFill="#ffffff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" text="01-01-2016" textFill="#ffffff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+<bottom>
+<HBox prefHeight="50" prefWidth="100" alignment="TOP_LEFT">
+    <children>
+        <MessageLabel fx:id="menu" id="button" prefHeight="32.0" prefWidth="32.0" />
+        <AnchorPane fx:id="navList" style="-fx-background-color:white" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" prefWidth="220.0" translateX="-220"   >
+            <children>
+                <Label text="left side menu"/>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
+</bottom>
+
+<!-- Style Sheet Reference -->
+ <stylesheets>
+    <URL value="@label.css" />
+  </stylesheets>
+</BorderPane>
